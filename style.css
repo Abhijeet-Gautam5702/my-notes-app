@@ -5,43 +5,67 @@
   font-family: "Noto Sans", sans-serif;
 }
 body {
-  /*     display:flex;
-      justify-content:center;
-      align-items:center; */
-  /*     height:fit-content; */
   max-width: 400px;
-  border: 2px solid blue;
   border-radius: 5px;
-  /*     background-color:blue; */
   margin: auto;
+  overflow: hidden;
 }
 main {
-  /*     border: 2px solid black; */
-  padding: 10px;
+  background-color: #ffff8f;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px gray;
   margin: auto;
 }
 .container {
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /*     align-items:center; */
 }
 #heading {
+  background-color: #fdda0d;
+  border-radius: 5px;
+  padding: 10px;
   text-align: center;
   margin-bottom: 10px;
   font-size: 20px;
 }
+input {
+  border: none; /*#F4C430 #FFBF00 #FAF9F6*/
+  border: 2px solid #ffc000;
+  border-radius: 5px;
+  /*   background-color:#FAF9F6; */
+}
 #title {
-  padding: 5px;
+  padding: 10px;
   width: 50%;
 }
 #notes {
-  padding: 5px;
+  padding: 10px;
   width: 100%;
   margin: 10px 0;
 }
 button {
+  padding: 10px 15px;
+  background-color: #1f51ff;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+#reset {
+  background-color: lightgray;
+  color: black;
+}
+
+.container-css {
+  padding: 10px;
+}
+
+.note-container {
   padding: 5px 10px;
-  /*     border:none; */
-  /*     border-radius:3px; */
+}
+.note-content {
+  font-size: 13px;
+  text-align: justify;
 }
