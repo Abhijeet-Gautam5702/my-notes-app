@@ -12,7 +12,7 @@ body {
 }
 main {
   background-color: #ffff8f;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   box-shadow: 5px 5px 10px gray;
   margin: auto;
 }
