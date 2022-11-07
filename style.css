@@ -65,7 +65,25 @@ button {
 
 .note-container {
   padding: 5px 10px;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: center;
 }
+.note-content-container{
+  /* border: 1px solid red; */
+  width:85%;
+}
+.control-btn-container{
+  /* border:1px solid black; */
+  width:10%;
+}
+.dlt-btn{
+  font-size:10px;
+  font-weight:normal;
+  padding:8px;
+}
+
 .note-content {
   font-size: 13px;
   text-align: justify;

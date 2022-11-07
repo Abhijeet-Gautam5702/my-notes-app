@@ -1,3 +1,6 @@
+
+
+
 const storageDiv = document.querySelector(".storage-container");
 
 //render the previously stored notes from localStorage
@@ -31,8 +34,13 @@ saveBtn.addEventListener("click", function () {
   `
     <hr class = "divider" />
     <div class = "note-container">
-      <h3 class = "note-title"> ${fetchPrevNotes[n - 1].title} </h3>
-      <p class = "note-content">${fetchPrevNotes[n - 1].notes}</p>
+      <div class = "note-content-container">
+        <h3 class = "note-title"> ${fetchPrevNotes[n - 1].title} </h3>
+        <p class = "note-content">${fetchPrevNotes[n - 1].notes}</p>
+      </div>
+      <div class = "control-btn-container">
+        <button class = "dlt-btn">delete</button>
+      </div>
     </div>
   `;
   // storageDiv.classList.toggle("container-css");
@@ -62,10 +70,18 @@ function render(arr) {
     x += `
     <hr class = "divider" />
     <div class = "note-container">
-      <h3 class = "note-title"> ${arr[i].title} </h3>
-      <p class = "note-content">${arr[i].notes}</p>
+      <div class = "note-content-container">
+        <h3 class = "note-title"> ${arr[i].title} </h3>
+        <p class = "note-content">${arr[i].notes}</p>
+      </div>
+      <div class = "control-btn-container">
+        <button class = "dlt-btn">delete</button>
+      </div>
     </div>`;
   }
   storageDiv.innerHTML = x;
   storageDiv.classList.add("container-css");
 }
+
+
+
