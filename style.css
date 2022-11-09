@@ -5,7 +5,7 @@
   font-family: "Noto Sans", sans-serif;
 }
 body {
-  width:400px;
+  width: 400px;
   min-width: 400px;
   /* border-radius: 5px; */
   margin: auto;
@@ -53,6 +53,10 @@ button {
   color: white;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+}
+#save-btn:hover {
+  background-color: #062bb1;
 }
 #reset {
   background-color: lightgray;
@@ -64,27 +68,30 @@ button {
 }
 
 .note-container {
-  padding: 5px 10px;
-  display:flex;
-  flex-direction:row;
+/*   border:1px solid blue; */
+  padding: 5px 0px;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.note-content-container{
-  /* border: 1px solid red; */
-  width:85%;
+.note-content-container {
+/*   border: 1px solid red; */
+  width: 85%;
 }
-.control-btn-container{
-  /* border:1px solid black; */
-  width:10%;
+.control-btn-container {
+/*   border:1px solid black; */
+  width: 10%;
+  display:flex;
+  justify-content:space-between;
+  
 }
-.dlt-btn{
-  font-size:10px;
-  font-weight:normal;
-  padding:8px;
-}
-
 .note-content {
   font-size: 13px;
   text-align: justify;
+}
+
+.dlt-icon,.edit-icon{
+  width:45%;
+  cursor:pointer;
 }
