@@ -35,5 +35,7 @@ Similar procedure is applicable for other browsers too.
 
 **Frontend:** HTML, CSS and Vanilla JS
 
+## Screenshot
 
+[![Screenshot-906.png](https://i.postimg.cc/PJK1YQNt/Screenshot-906.png)](https://postimg.cc/fSt3hXxF)
 
